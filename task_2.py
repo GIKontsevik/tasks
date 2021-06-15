@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 def imposition(rec1, rec2):
     
     #Необходимо и достаточно, чтобы правый верхний угол одной фигуры
@@ -21,7 +15,7 @@ def imposition(rec1, rec2):
         return 'true'
 
 
-# In[ ]:
+#Или вот так я не знаю как лучше. Первый вариант чуть-чуть быстрее :/
 
 
 def imposition1(rec1, rec2):
@@ -35,22 +29,11 @@ def imposition1(rec1, rec2):
     
     return 'false' if any(conditions) else 'true'
 
-
-# In[ ]:
-
-
 rec1 = [0,0,1,1]
 rec2 = [0,0,3,3]
 
-
-# In[ ]:
-
-
-get_ipython().run_line_magic('timeit', 'imposition(rec1, rec2)')
-
-
-# In[ ]:
-
-
-get_ipython().run_line_magic('timeit', 'imposition1(rec1, rec2)')
+#imposition(rec1, rec2)
+#imposition1(rec1, rec2)
+#get_ipython().run_line_magic('timeit', 'imposition(rec1, rec2)')
+#get_ipython().run_line_magic('timeit', 'imposition1(rec1, rec2)')
 
