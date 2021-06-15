@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 def brackets(line):
     
     open_br = ['(', '[', '{']
@@ -28,15 +22,5 @@ def brackets(line):
                 
     return 'true' if not last_open else 'false'
 
-
-# In[ ]:
-
-
-brackets('[({})(o)) 0]()')
-
-
-# In[ ]:
-
-
-get_ipython().run_line_magic('timeit', "brackets('[({})(o) 0]()')")
-
+#brackets('[({})(o)) 0]()')
+#get_ipython().run_line_magic('timeit', "brackets('[({})(o) 0]()')")
